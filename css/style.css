@@ -859,9 +859,10 @@ a:focus {
 #image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 33px;
   padding: 20px;
   margin-top: 80px;
+  
 }
 
 #image-gallery img {
@@ -872,5 +873,49 @@ a:focus {
 }
 
 #image-gallery img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
+
+
+
+
+
+.image-container {
+  position: relative;
+}
+
+
+
+.hover-content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+.image-container:hover .hover-content {
+  opacity: 1;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.sales-button,
+.service-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #f38120;
+  color: white;
+  cursor: pointer;
+}
+
+.sales-button:hover,
+.service-button:hover {
+  background-color: #f38120;
+}
+

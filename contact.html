@@ -92,7 +92,11 @@
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1576558201095!2d76.12292147424333!3d10.799234589350908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c7075067de83%3A0xec1fa4391a405d7d!2sMoochikkal!5e0!3m2!1sen!2sus!4v1712123331962!5m2!1sen!2sus"
+                width="600" height="300" frameborder="0" style="border:0;width: 100%; height:100%" allowfullscreen=""
+                loading="lazy"></iframe> 
             </div>
           </div>
         </div>
@@ -137,8 +141,8 @@
           <a href="">
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-          <a href="">
-            <i class="fa fa-youtube" aria-hidden="true"></i>
+          <a href="#" onclick="redirectToWhatsApp()"> 
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -218,6 +222,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
     </script>
     <script src="js/custom.js"></script>
+    <script>
+      function redirectToWhatsApp() {
+          var phoneNumber = '9048014511';
+          var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber;
+          window.location.href = whatsappURL;
+      }
+  </script>
   
   </body>
   

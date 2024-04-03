@@ -99,7 +99,9 @@
     .info_section {
         /* margin: 0 25px 25px; */
     }
-
+    #image-gallery img:hover {
+        transform: scale(1.2);
+      }
 
 }
 
